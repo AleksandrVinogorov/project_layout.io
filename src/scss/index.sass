@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+@import "./blocks/header";
+@import "./blocks/main";
+@import "./blocks/footer";
 html, body {
     scroll-behavior: smooth;
     margin: 0;
@@ -627,7 +631,7 @@ input[type=number] {
     transition: .3s;
 }
 .select-arr-left {
-    background-image: url(./img/arrow-left.svg);
+    background-image: url(../img/arrow-left.svg);
     border: none;
     background-color: rgba(0,0,0,0);
     -webkit-box-sizing: content-box;
@@ -639,7 +643,7 @@ input[type=number] {
     outline: none;
 }
 .select-arr-right {
-    background-image: url(./img/arrow-right.svg);
+    background-image: url(../img/arrow-right.svg);
     border: none;
     background-color: rgba(0,0,0,0);
     -webkit-box-sizing: content-box;
@@ -863,7 +867,7 @@ input[type=number] {
     align-items: center;
 }
 .play-button {
-    background-image: url(./img/play-button.png);
+    background-image: url(../img/play-button.png);
     position: absolute;
     z-index: 3;
     width: 85px;
@@ -874,7 +878,7 @@ input[type=number] {
 }
 @media (max-width: 960px) {
     .play-button {
-        background-image: url(./img/play-button-mobile.svg);
+        background-image: url(../img/play-button-mobile.svg);
     }
     .play-button__container {
         margin-top: 100px;
@@ -1088,7 +1092,7 @@ input[type=number] {
     border-radius: 1px;
 }
 .check-label::after {
-    content: url(./img/mark.svg);
+    content: url(../img/mark.svg);
     top: 45%;
     left: 4.5px;
     opacity: 0;
@@ -1267,7 +1271,7 @@ input[type=number] {
         margin: 30% 5%;
     }
     .button-flip__right {
-        background-image: url(./img/flip-right.svg);
+        background-image: url(../img/flip-right.svg);
         background-repeat: no-repeat;
         width: 36px;
         height: 36px;
@@ -1276,7 +1280,7 @@ input[type=number] {
         border: none;
     }
     .button-flip__left {
-        background-image: url(./img/flip-left.svg);
+        background-image: url(../img/flip-left.svg);
         background-repeat: no-repeat;
         width: 36px;
         height: 36px;
@@ -1916,7 +1920,7 @@ input:focus::-webkit-input-placeholder {
     gap: 15px;
 }
 .img-message {
-    background-image: url(./img/message.svg);
+    background-image: url(../img/message.svg);
     width: 28px;
     height: 28px;
     border-radius: 50%;
@@ -1926,7 +1930,7 @@ input:focus::-webkit-input-placeholder {
     cursor:pointer;
 }
 .img-instagram {
-    background-image: url(./img/instagram.svg);
+    background-image: url(../img/instagram.svg);
     width: 28px;
     height: 28px;
     border-radius: 50%;
