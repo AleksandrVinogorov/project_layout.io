@@ -323,8 +323,8 @@ function App() {
             <footer className="footer">
                 <div className="footer-wrapper">
                     <div className="logo">IC "Repair Design Project"</div>
-                    <nav className="header__nav-block">
-                        <ul className="header__nav-items">
+                    <nav className="footer__nav-block">
+                        <ul className="footer__nav-items">
                             <li><a className="nav-item" href="#home">Home</a></li>
                             <li><a className="nav-item" href="#projects">Projects</a></li>
                             <li><a className="nav-item" href="#measurement">Measurement</a></li>
@@ -333,7 +333,7 @@ function App() {
                             <li><a className="nav-item" href="#contacts">Contacts</a></li>
                         </ul>
                     </nav>
-                    <div className="header__call-block">
+                    <div className="footer__call-block">
                         <a href='/#' className="call-block__number">+7 (928) 768-32-39</a>
                         <button className="call-block__button">Request a call</button>
                     </div>
@@ -344,3 +344,4 @@ function App() {
 }
 
 export default App;
+
