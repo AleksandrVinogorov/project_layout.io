@@ -1,0 +1,143 @@
+/* Секция video-presentation */
+.video-presentation {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-top: -360px;
+
+    @media (max-width: 960px) {
+        margin-top: 0;
+        background-color: black;
+    }
+}
+
+.video-presentation__wrapper {
+    @media (max-width: 960px) {
+        padding-top: 57px;
+    }
+}
+.video-presentation__decor-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 13px;
+
+    @media (max-width: 1280px) {
+        gap: 17px;
+    }
+
+    .decor-icons__title {
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 0;
+
+        @media (max-width: 960px) {
+            font-size: 22px;
+            line-height: 138.6%;
+        }
+    }
+
+    .decor-icons-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+        gap: 8px;
+    }
+}
+.decor-icons-images__player {
+    text-align: center;
+    margin-top: 32px;
+
+    .play-button__container {
+        z-index: 100;
+        position: absolute;
+        margin-top: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .play-button {
+            background-image: url(../img/play-button.png);
+            position: absolute;
+            z-index: 3;
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            border: 0;
+            background-color: transparent;
+
+            @media (max-width: 960px) {
+                background-image: url(../img/play-button-mobile.svg);
+            }
+        }
+        @media (max-width: 960px) {
+            margin-top: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .shadow-image {
+        position: absolute;
+        z-index: 2;
+
+        @media (max-width: 960px) {
+            width: 340px;
+            height: 207px;
+        }
+    }
+
+    .renovation-image {
+        z-index: 0;
+
+        @media (max-width: 960px) {
+            width: 340px;
+            height: 207px;
+        }
+    }
+}
+.video-presentation__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    margin-top: 36px;
+
+    color: #363636;
+
+    @media (max-width: 960px) {
+        margin-top: 34px;
+        font-size: 11px;
+        line-height: 169.8%;
+        color: #FFFFFF;
+    }
+
+    .text-description {
+        @media (max-width: 960px) {
+            display: none;
+        }
+
+    }
+
+    .text-description__mobile {
+        display: none;
+
+        @media (max-width: 960px) {
+            display: block;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+
+    .renovation-mobile img {
+        width: 92%;
+    }
+}

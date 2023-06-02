@@ -1,0 +1,188 @@
+/* Секция Intro */
+.intro {
+    height: 707px;
+    .intro__wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    @media (max-width: 650px) {
+            height: 707px;
+    }
+}
+
+.intro__title {
+    position: absolute;
+    z-index: 2;
+    height: 305px;
+    margin-top: 153px;
+    margin-left: 134px;
+    @media (max-width: 960px) {
+            width: initial;
+            margin-left: 10%;
+    }
+    
+    @media (max-width: 650px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: auto;
+            margin-top: 0;
+            width: 100%;
+    }
+}
+
+.intro__title-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+    .title-container__heading {
+        font-size: 40px;
+        line-height: 53px;
+        color: #FFFFFF;
+        .intro-cityname {
+            color: #E3B873;
+        }
+        @media (max-width: 650px) {
+                font-size: 23px;
+                line-height: 132.83%;
+                max-width: 346px;
+                text-align: start;
+                padding-left: 18px;
+        }
+    }
+    @media (max-width: 650px) {
+            width: 100%;
+            padding: 0px 0px;
+    }
+    .title-container__text {
+        width: 505px;
+        height: 89px;
+        margin-top: -15px;
+        margin-bottom: 45px;
+    
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 36px;
+    
+        color: #FFFFFF;
+        @media (max-width: 650px) {
+                display: none;
+        }
+    }
+    .title-container__text-mobile {
+        display: none;
+        @media (max-width: 650px) {
+                display: block;
+                max-width: 346px;
+                height: 89px;
+                text-align: start;
+                padding-left: 18px;
+        
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 135.84%;
+                margin: 0;
+                color: #FFFFFF;
+        }
+    }
+}
+
+
+.intro-buttons {
+    display: flex;
+    margin-top: 45px;
+    gap: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+    .intro-button-cost {
+        width: 207px;
+        height: 51px;
+    
+        background: #e3b87300;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+        border: 1px solid #FFFFFF;
+        border-radius: 2px;
+    
+        font-style: italic;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 15px;
+        text-align: center;
+    
+        color: #FFFFFF;
+        &:hover {
+            transition: 0.5s;
+            background: #E3B873;
+        }
+        @media (max-width: 650px) {
+                width: 100%;
+        }
+    }
+    .intro-button-submit-1 {
+        width: 207px;
+        height: 51px;
+        background: transparent;
+        border: 1px solid #FFFFFF;
+        border-radius: 2px;
+    
+        font-style: italic;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 15px;
+        text-align: center;
+    
+        color: #FFFFFF;
+        &:hover {
+            transition: 0.5s;
+            background: #E3B873;
+        }
+        @media (max-width: 650px) {
+                display: none;
+        }
+    }
+    .intro-button-submit-2 {
+        display: none;
+        @media (max-width: 650px) {
+                display: block;
+                width: 100%;
+                height: 51px;
+                background: transparent;
+                border: 1px solid #FFFFFF;
+                border-radius: 2px;
+        
+                font-style: italic;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 15px;
+                text-align: center;
+        
+                color: #FFFFFF;
+        }
+    }
+    @media (max-width: 650px) {
+            flex-direction: column;
+            width: 92%;
+            gap: 27px;
+            margin-top: 34px;
+    }
+}
+
+
+.intro__background-image {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow-x: hidden;
+    .intro-shadow {
+        position: absolute;
+        width: 100%;
+        height: 707px;
+    }
+    
+    .intro-background {
+        height: 707px;
+        width: 100%;
+    }
+}

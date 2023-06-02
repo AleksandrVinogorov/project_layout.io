@@ -1,0 +1,78 @@
+/* Секция mobile-styles */
+.mobile-styles {
+    display: none;
+
+    @media (max-width: 1280px) {
+        display: block;
+        text-align: center;
+        width: 92%;
+        margin: 75px auto;
+        margin-bottom: 0;
+    }
+
+    .mobile-styles__wrapper {
+        h2 {
+            width: 340px;
+            text-align: center;
+            font-size: 22px;
+            line-height: 138.6%;
+            color: #E3B873;
+
+            @media (max-width: 1280px) {
+                width: 100%;
+            }
+        }
+
+        .mobile-styles__img {
+            .mobile-styles__buttons {
+                @media (max-width: 1280px) {
+                    position: absolute;
+                    display: flex;
+                    width: 90%;
+                    left: 0;
+                    justify-content: space-between;
+                    margin: 30% 5%;
+                }
+
+                .button-flip__right {
+                    @media (max-width: 1280px) {
+                        background-image: url(../img/flip-right.svg);
+                        background-repeat: no-repeat;
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50%;
+                        background-color: transparent;
+                        border: none;
+                        &:hover {
+                            box-shadow: 0px 0px 20px rgb(255, 230, 0);
+                            transition: .1s ease;
+                        }
+                    }
+                }
+
+                .button-flip__left {
+                    @media (max-width: 1280px) {
+                        background-image: url(../img/flip-left.svg);
+                        background-repeat: no-repeat;
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50%;
+                        background-color: transparent;
+                        border: none;
+                        &:hover {
+                            box-shadow: 0px 0px 20px rgb(255, 230, 0);
+                            transition: .1s ease;
+                        }
+                    }
+                }
+            }
+
+            img {
+                @media (max-width: 1280px) {
+                    margin-top: 30px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
