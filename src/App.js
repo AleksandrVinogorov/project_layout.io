@@ -58,10 +58,6 @@ function App() {
                                 <img src={require("./img/decorative-line.svg").default} alt="interior" className="decorative-line-right" />
                             </div>
                         </div>
-                        <div className="decor-icons-images__mobile-player">
-                            <img src={require("./img/control.png")} className="renovation-shadow" alt="" />
-                            <img src={require("./img/control.jpg")} alt="" />
-                        </div>
                         <div className="decor-icons-images__player">
                             <div className="play-button__container">
                                 <button className="play-button"></button>
@@ -170,7 +166,7 @@ function App() {
                         <img src={require("./img/facade.jpg")} alt="" />
                     </div>
                     <div className="specification__form-container">
-                        <FormSpecification/>
+                        <FormSpecification />
                         <div className="specification__form-background"></div>
                         <div className="piggy_bank">
                             <img alt='piggy bank' src={require("./img/pig.svg").default} />
@@ -301,7 +297,7 @@ function App() {
                 <section className="pre-footer" id="contacts">
                     <div className="pre-footer__question-form-container">
                         <h1>have any questions?</h1>
-                        <QuestionForm/>
+                        <QuestionForm />
                     </div>
                     <div className="pre-footer__location-backround_mobile">
                         <img src={require("./img/map-mobile.png")} alt="" />
