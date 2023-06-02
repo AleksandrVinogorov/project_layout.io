@@ -1,6 +1,5 @@
 /* секция отзывов */
 .review-page {
-    max-height: 1107px;
     margin-top: 69px;
     margin-left: 24px;
     font-style: normal;
@@ -10,7 +9,7 @@
     overflow: hidden;
 
     @media (max-width: 1050px) {
-            display: none;
+        height: 1900px;
     }
 }
 
@@ -40,6 +39,12 @@
     gap: 54px;
     @media (max-width: 1280px) {
         gap: 8px;
+    }
+    @media (max-width: 1060px) {
+    gap: 80px;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
     }
 }
 
@@ -115,5 +120,21 @@
         transform: scale(-1, 1);
         z-index: -1;
         width: 100%;
+    }
+    @media (min-width: 1920px) {
+        margin-top: -600px;
+    }
+    @media (min-width: 1440px) {
+        margin-top: -400px;
+    }
+    @media (max-width: 1440px) {
+        margin-top: -300px;
+    }
+    @media (min-width: 1600px) {
+        margin-top: -500px;
+    }
+    @media (max-width: 1060px) {
+        position: absolute;
+        visibility: hidden;
     }
 }

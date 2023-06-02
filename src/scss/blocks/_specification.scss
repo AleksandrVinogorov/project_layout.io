@@ -9,166 +9,166 @@
     @media (max-width: 1280px) {
         display: none;
     }
+}
 
-    .specification__container {
-        .specification__list-info {
-            position: absolute;
-            height: 473.62px;
-            margin-top: 111px;
-            margin-left: 200px;
+.specification__container {
+    .specification__list-info {
+        position: absolute;
+        height: 473.62px;
+        margin-top: 111px;
+        margin-left: 200px;
 
-            font-style: normal;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 84px;
+
             font-weight: 400;
             font-size: 14px;
             line-height: 19px;
 
-            .list-item {
+            span {
                 display: flex;
+                justify-content: center;
                 align-items: center;
-                margin-bottom: 84px;
-
+                width: 44px;
+                height: 44px;
+                background-color: #E3B873;
+                border-radius: 20rem;
+                border: 8px solid #fff;
+                font-size: 18px;
                 font-weight: 400;
-                font-size: 14px;
-                line-height: 19px;
-
-                span {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 44px;
-                    height: 44px;
-                    background-color: #E3B873;
-                    border-radius: 20rem;
-                    border: 8px solid #fff;
-                    font-size: 18px;
-                    font-weight: 400;
-                    color: #fff;
-                    line-height: 25px;
-                    box-shadow: 0px 5px 15px rgb(227 184 115 / 15%);
-                    margin-right: 9px;
-                }
+                color: #fff;
+                line-height: 25px;
+                box-shadow: 0px 5px 15px rgb(227 184 115 / 15%);
+                margin-right: 9px;
             }
         }
     }
+}
 
-    .specification__form-container {
-        margin-right: 128px;
-        margin-top: 110px;
+.specification__form-container {
+    margin-right: 128px;
+    margin-top: 110px;
+}
 
-        .specification__form-wrapper {
-            position: absolute;
+.specification__form-wrapper {
+    position: absolute;
 
-            .specification__form-title {
-                max-width: 297px;
-                max-height: 47px;
-                margin-top: 28px;
-                margin-left: 105px;
+    .specification__form-title {
+        max-width: 297px;
+        max-height: 47px;
+        margin-top: 28px;
+        margin-left: 105px;
 
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 26px;
-                text-align: center;
-                text-transform: none;
-                color: #FFFFFF;
-            }
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        text-transform: none;
+        color: #FFFFFF;
+    }
 
-            .specification__form {
-                .characteristics-form-wrapper {
-                    display: flex;
-                    flex-direction: column;
-                    margin-top: 36px;
-                    margin-left: 49px;
-                    gap: 45px;
+    .specification__form {
+        .characteristics-form-wrapper {
+            display: flex;
+            flex-direction: column;
+            margin-top: 36px;
+            margin-left: 49px;
+            gap: 45px;
 
-                    .form-name,
-                    .form-email,
-                    .form-number {
-                        display: flex;
-                        flex-direction: column-reverse;
+            .form-name,
+            .form-email,
+            .form-number {
+                display: flex;
+                flex-direction: column-reverse;
 
-                        .input-decor {
-                            color: #fff;
-                            background: transparent;
-                            border: none;
-                            border-bottom: 0.1rem solid #FFFFFF26;
-                            height: 28px;
-                            font-weight: 400;
-                            font-size: 14px;
-                            line-height: 23px;
-                        }
-
-                        .input-decor::placeholder {
-                            color: #fff;
-                        }
-
-                        .input-decor:focus {
-                            font-size: 17px;
-                        }
-
-                        .label-decor {
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 13px;
-                            line-height: 21px;
-
-                            color: #FFFFFF80;
-                        }
-                    }
+                .input-decor {
+                    color: #fff;
+                    background: transparent;
+                    border: none;
+                    border-bottom: 0.1rem solid #FFFFFF26;
+                    height: 28px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 23px;
                 }
-                .specification__form-check-submit {
-                    margin-left: 46px;
-                    margin-top: 16px;
-                    color: #FFFFFF;
-                    .check-box {
-                        width: 18px;
-                        height: 18px;
-                        background: #E3B873;
-                        border-radius: 1px;
-                    }
+
+                .input-decor::placeholder {
+                    color: #fff;
                 }
-                .submit-measure {
-                    margin-top: 36px;
-                    margin-left: 245px;
-                    height: 51px;
-                    width: 213px;
-                    background: #E3B873;
-                    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
-                    transition: .2s ease;
-                    border: 0px;
-                
+
+                .input-decor:focus {
+                    font-size: 17px;
+                }
+
+                .label-decor {
+                    font-style: normal;
                     font-weight: 400;
                     font-size: 13px;
                     line-height: 21px;
-                    text-align: center;
-                    text-transform: uppercase;
-                
-                    text-align: center;
-                    color: #FFFFFF;
+
+                    color: #FFFFFF80;
                 }
             }
         }
-        .specification__form-background {
-            width: 506px;
-            height: 509px;
-            border-radius: 10px;
-            background-color: #131313;
-        }
-        .piggy_bank {
-            display: flex;
-            margin-top: 27px;
-            margin-left: 12px;
-            p {
-                margin-top: 24px;
-                margin-left: 4px;
-            
-                font-style: normal;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 26px;
-            
-                color: #E3B873;
-                text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+        .specification__form-check-submit {
+            margin-left: 46px;
+            margin-top: 16px;
+            color: #FFFFFF;
+            .check-box {
+                width: 18px;
+                height: 18px;
+                background: #E3B873;
+                border-radius: 1px;
             }
         }
+        .submit-measure {
+            margin-top: 36px;
+            margin-left: 245px;
+            height: 51px;
+            width: 213px;
+            background: #E3B873;
+            box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+            transition: .2s ease;
+            border: 0px;
+        
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 21px;
+            text-align: center;
+            text-transform: uppercase;
+        
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+}
+.specification__form-background {
+    width: 506px;
+    height: 509px;
+    border-radius: 10px;
+    background-color: #131313;
+}
+.piggy_bank {
+    display: flex;
+    margin-top: 27px;
+    margin-left: 12px;
+    p {
+        margin-top: 24px;
+        margin-left: 4px;
+    
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+    
+        color: #E3B873;
+        text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
     }
 }

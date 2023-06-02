@@ -2,7 +2,7 @@
 .repair-types__section {
     text-align: center;
     margin-top: 140px;
-
+    transition: ease all .5s;
     @media (max-width: 1280px) {
         margin-top: 81px;
     }
