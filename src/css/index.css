@@ -18,7 +18,7 @@
     position: relative;
   }
 }
-@media (max-width: 1280px) {
+@media (max-width: 900px) {
   .header {
     height: 57px;
   }
@@ -68,18 +68,24 @@
 .header__nav-block .header__nav-items .nav-item:hover {
   transition: 0.5s;
   color: #E3B873;
+  cursor: pointer;
 }
 @media (max-width: 1280px) {
+  .header__nav-block .header__nav-items {
+    gap: 48px;
+  }
+}
+@media (max-width: 1080px) {
   .header__nav-block .header__nav-items {
     gap: 30px;
   }
 }
-@media (max-width: 1280px) {
+@media (max-width: 980px) {
   .header__nav-block .header__nav-items {
-    gap: 15px;
+    gap: 25px;
   }
 }
-@media (max-width: 1280px) {
+@media (max-width: 800px) {
   .header__nav-block .header__nav-items {
     display: none;
   }
@@ -121,7 +127,7 @@
   font-size: 11px;
   text-transform: uppercase;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header__call-block .call-block__button {
     display: none;
   }
@@ -173,6 +179,7 @@
 .intro__title-container .title-container__heading {
   font-size: 40px;
   line-height: 53px;
+  text-align: start;
   color: #FFFFFF;
 }
 .intro__title-container .title-container__heading .intro-cityname {
@@ -548,6 +555,16 @@
     width: 100%;
   }
 }
+.page__mobile-container .mobile-container_buttons {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 420px;
+  justify-content: space-between;
+  margin: 0 6%;
+  width: 88%;
+}
 @media (max-width: 1280px) {
   .page__mobile-container .mobile-container_buttons .button-flip__right {
     background-image: url(../img/flip-right.svg);
@@ -578,48 +595,9 @@
     transition: 0.1s ease;
   }
 }
-@media (max-width: 960px) {
+@media (min-width: 830px) {
   .page__mobile-container .mobile-container_buttons {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    width: 90%;
-    left: 0;
-    justify-content: space-between;
-    margin: 22% 11%;
     width: 78%;
-  }
-}
-@media (max-width: 880px) {
-  .page__mobile-container .mobile-container_buttons {
-    margin: 25% 7%;
-    width: 86%;
-  }
-}
-@media (max-width: 640px) {
-  .page__mobile-container .mobile-container_buttons {
-    margin: 31% 6%;
-    width: 88%;
-  }
-}
-@media (max-width: 540px) {
-  .page__mobile-container .mobile-container_buttons {
-    margin: 38% 5%;
-  }
-}
-@media (max-width: 470px) {
-  .page__mobile-container .mobile-container_buttons {
-    margin: 44% 5%;
-  }
-}
-@media (max-width: 360px) {
-  .page__mobile-container .mobile-container_buttons {
-    margin: 55% 5%;
-  }
-}
-@media (max-width: 360px) {
-  .page__mobile-container .mobile-container_buttons {
-    margin: 60% 5%;
   }
 }
 
@@ -629,6 +607,7 @@
   line-height: 37px;
   letter-spacing: -0.07em;
   text-transform: uppercase;
+  text-align: start;
   color: #E3B873;
   margin: 0;
 }
@@ -1098,6 +1077,11 @@
     gap: 175px;
   }
 }
+@media (max-width: 960px) {
+  .repair-types__services-examples {
+    gap: 77px;
+  }
+}
 @media (max-width: 650px) {
   .repair-types__services-examples {
     gap: 77px;
@@ -1402,6 +1386,7 @@
   z-index: 3;
   margin-top: 135px;
   margin-left: 128px;
+  text-align: start;
   font-size: 27px;
   line-height: 37px;
   text-transform: uppercase;
@@ -1490,10 +1475,11 @@
   .mobile-styles .mobile-styles__wrapper .mobile-styles__img .mobile-styles__buttons {
     position: absolute;
     display: flex;
+    align-items: center;
     width: 90%;
     left: 0;
     justify-content: space-between;
-    margin: 30% 5%;
+    margin: 33% 5%;
   }
 }
 @media (max-width: 1280px) {
@@ -2224,7 +2210,6 @@ h1 {
 
 html,
 body {
-  scroll-behavior: smooth;
   margin: 0;
   height: 100%;
   margin: 0;
@@ -2241,6 +2226,10 @@ h2 {
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+a {
+  scroll-behavior: smooth;
 }
 
 button {

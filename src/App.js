@@ -3,7 +3,7 @@ import FormRequest from './form/Form';
 import FormSpecification from './form/FormSpecification';
 import QuestionForm from './form/QuestionForm';
 import { Slider } from './slider/Slider';
-
+import NavBehaviour from './scroll_behaviour/Navigation';
 function App() {
     return (
         <>
@@ -12,12 +12,7 @@ function App() {
                     <div className="logo">IC "Repair Design Project"</div>
                     <nav className="header__nav-block">
                         <ul className="header__nav-items">
-                            <li><a className="nav-item" href="#home">Home</a></li>
-                            <li><a className="nav-item" href="#projects">Projects</a></li>
-                            <li><a className="nav-item" href="#measurement">Measurement</a></li>
-                            <li><a className="nav-item" href="#team">Team</a></li>
-                            <li><a className="nav-item" href="#reviews">Reviews</a></li>
-                            <li><a className="nav-item" href="#contacts">Contacts</a></li>
+                            <NavBehaviour />
                         </ul>
                     </nav>
                     <div className="header__call-block">
@@ -321,12 +316,7 @@ function App() {
                     <div className="logo">IC "Repair Design Project"</div>
                     <nav className="footer__nav-block">
                         <ul className="footer__nav-items">
-                            <li><a className="nav-item" href="#home">Home</a></li>
-                            <li><a className="nav-item" href="#projects">Projects</a></li>
-                            <li><a className="nav-item" href="#measurement">Measurement</a></li>
-                            <li><a className="nav-item" href="#team">Team</a></li>
-                            <li><a className="nav-item" href="#reviews">Reviews</a></li>
-                            <li><a className="nav-item" href="#contacts">Contacts</a></li>
+                            <NavBehaviour />
                         </ul>
                     </nav>
                     <div className="footer__call-block">

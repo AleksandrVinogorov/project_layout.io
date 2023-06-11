@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SlideDescription from "./SlideDescription";
 import SlideDots from "./SlideDots";
 import SlideTitle from "./SlideTitle";
@@ -11,6 +11,18 @@ export const Slider = () => {
         { id: 2, city: 'Rostov-on-Don Patriotic', apartmentArea: '93 m2', repairTime: '3 months', repairCost: 'Upon request', url: "https://ezdili-znaem.com/wp-content/uploads/2016/11/otel-poseidon-undersea.jpg" },
     ]
     const [slideIndex, setSlideIndex] = useState(0)
+    const [intervalId, setIntervalId] = useState(null);
+
+    useEffect(() => {
+        const id = setInterval(() => {
+            const isLastSlide = slideIndex === slides.length - 1;
+            const newIndex = isLastSlide ? 0 : slideIndex + 1;
+            setSlideIndex(newIndex);
+        }, 3000);
+        setIntervalId(id);
+
+        return () => clearInterval(id);
+    }, [slideIndex, slides.length]);
 
     const previousSlide = () => {
         const isFirstSlide = slideIndex === 0;
@@ -24,6 +36,7 @@ export const Slider = () => {
     }
 
     const goToSlide = slideIndex => {
+        clearInterval(intervalId);
         setSlideIndex(slideIndex);
     }
     return (

@@ -14,12 +14,12 @@ const MobileSlider = ({ slides, slideIndex, previousSlide, nextSlide }) => {
     return (
         <div className="page__mobile-container">
             <div className="mobile-container_flip">
-                <div className="mobile-container_flip-image" style={sliderstyleImg}>
-                    <img style={{ backgroundImage: `url(${slides[slideIndex].url})` }} className="completed-project-img" alt="" />
-                </div>
                 <div className="mobile-container_buttons">
                     <button onClick={previousSlide} type="button" className="button-flip__left"></button>
                     <button onClick={nextSlide} type="button" className="button-flip__right"></button>
+                </div>
+                <div className="mobile-container_flip-image" style={sliderstyleImg}>
+                    <img style={{ backgroundImage: `url(${slides[slideIndex].url})` }} className="completed-project-img" alt="" />
                 </div>
             </div>
         </div>
