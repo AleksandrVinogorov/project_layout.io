@@ -789,7 +789,7 @@
   .decor-icons-images__player .play-button__container .play-button {
     background-image: url(../img/play-button-mobile.svg);
   }
-}
+} 
 @media (max-width: 960px) {
   .decor-icons-images__player .play-button__container {
     margin-top: 100px;

@@ -22,7 +22,7 @@ export const Slider = () => {
         setIntervalId(id); 
 
         return () => clearInterval(id);
-    }, [slideIndex, slides.length]);
+    }, [slideIndex, slides.length]); 
 
     const previousSlide = () => {
         const isFirstSlide = slideIndex === 0;

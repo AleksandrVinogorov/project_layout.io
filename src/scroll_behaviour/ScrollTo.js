@@ -9,7 +9,7 @@ function ScrollTo(props) {
       offset={-50} // Задает смещение при скроллинге вниз
     >
       {props.children}
-    </Link>
+    </Link> 
   );
 }
 

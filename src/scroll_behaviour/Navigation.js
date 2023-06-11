@@ -11,4 +11,4 @@ function NavBehaviour() {
         <li className="nav-item"><ScrollTo to="contacts">Contacts</ScrollTo></li>
         </>
 }
-export default NavBehaviour
+export default NavBehaviour 
