@@ -19,7 +19,7 @@ export const Slider = () => {
             const newIndex = isLastSlide ? 0 : slideIndex + 1;
             setSlideIndex(newIndex);
         }, 3000);
-        setIntervalId(id);
+        setIntervalId(id); 
 
         return () => clearInterval(id);
     }, [slideIndex, slides.length]);
