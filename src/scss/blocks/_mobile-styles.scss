@@ -28,10 +28,11 @@
                 @media (max-width: 1280px) {
                     position: absolute;
                     display: flex;
+                    align-items: center;
                     width: 90%;
                     left: 0;
                     justify-content: space-between;
-                    margin: 30% 5%;
+                    margin: 33% 5%;
                 }
 
                 .button-flip__right {

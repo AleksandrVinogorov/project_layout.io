@@ -229,6 +229,14 @@
     }
 
     .mobile-container_buttons {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        width: 90%;
+        height: 420px;
+        justify-content: space-between;
+        margin: 0 6%;
+        width: 88%;
         .button-flip__right {
             @media (max-width: 1280px) {
                 background-image: url(../img/flip-right.svg);
@@ -262,42 +270,8 @@
                 }
             }
         }
-
-        @media (max-width: 960px) {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            width: 90%;
-            left: 0;
-            justify-content: space-between;
-            margin: 22% 11%;
+        @media (min-width: 830px) {
             width: 78%;
-        }
-
-        @media (max-width: 880px) {
-            margin: 25% 7%;
-            width: 86%;
-        }
-
-        @media (max-width: 640px) {
-            margin: 31% 6%;
-            width: 88%;
-        }
-
-        @media (max-width: 540px) {
-            margin: 38% 5%;
-        }
-
-        @media (max-width: 470px) {
-            margin: 44% 5%;
-        }
-
-        @media (max-width: 360px) {
-            margin: 55% 5%;
-        }
-
-        @media (max-width: 360px) {
-            margin: 60% 5%;
         }
     }
 }
@@ -307,6 +281,7 @@
     line-height: 37px;
     letter-spacing: -0.07em;
     text-transform: uppercase;
+    text-align: start;
     color: #E3B873;
     margin: 0;
 

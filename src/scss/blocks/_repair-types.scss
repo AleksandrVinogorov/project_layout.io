@@ -32,6 +32,9 @@
         gap: 175px;
     }
 
+    @media (max-width: 960px) {
+        gap: 77px;
+    }
     @media (max-width: 650px) {
         gap: 77px;
     }

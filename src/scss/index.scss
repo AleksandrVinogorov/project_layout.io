@@ -17,7 +17,6 @@
 
 html,
 body {
-    scroll-behavior: smooth;
     margin: 0;
     height: 100%;
 
@@ -37,7 +36,9 @@ h2 {
     font-weight: 400;
     text-transform: uppercase;
 }
-
+a {
+    scroll-behavior: smooth;
+}
 button {
     cursor: pointer;
 }
