@@ -789,7 +789,7 @@
   .decor-icons-images__player .play-button__container .play-button {
     background-image: url(../img/play-button-mobile.svg);
   }
-} 
+}
 @media (max-width: 960px) {
   .decor-icons-images__player .play-button__container {
     margin-top: 100px;
@@ -1641,6 +1641,7 @@
   display: flex;
   justify-content: center;
   margin-top: -363px;
+  max-height: 1000px;
 }
 .city-background-container .city-background {
   transform: scale(-1, 1);
@@ -1650,6 +1651,7 @@
 @media (min-width: 1920px) {
   .city-background-container {
     margin-top: -600px;
+    height: 1000px;
   }
 }
 @media (min-width: 1440px) {
@@ -2080,6 +2082,12 @@ h1 {
 @media (max-width: 960px) {
   .location-map {
     display: none;
+  }
+}
+
+@media (min-width: 1600px) {
+  .city-background {
+    height: 1000px;
   }
 }
 

@@ -380,4 +380,9 @@ h1 {
         display: none;
     }
 }
+.city-background {
+    @media (min-width: 1600px) {
+        height: 1000px;
+    }
+}
 
